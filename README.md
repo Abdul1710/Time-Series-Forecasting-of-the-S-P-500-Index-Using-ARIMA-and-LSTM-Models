@@ -1,2 +1,93 @@
-# Time-Series-Forecasting-of-the-S-P-500-Index-Using-ARIMA-and-LSTM-Models
-This project focuses on forecasting the S&amp;P 500 index using time series techniques. A statistical ARIMA model and a deep learning LSTM model are implemented and compared. The study evaluates prediction accuracy using standard error metrics and highlights the effectiveness of deep learning for capturing market trends.
+📈 Time Series Forecasting of the S&P 500 Index Using ARIMA and LSTM
+
+## 📌 Project Overview
+
+This project focuses on forecasting the S&P 500 stock market index using time series analysis. A traditional statistical model (ARIMA) and a deep learning model (LSTM) are implemented and compared to evaluate their effectiveness in predicting future index values.
+
+---
+
+## 🎯 Objectives
+
+* Analyze historical S&P 500 index data
+* Build a baseline ARIMA time series model
+* Develop an LSTM-based deep learning model
+* Compare model performance using error metrics
+* Visualize and interpret forecasting results
+
+---
+
+## 📊 Dataset
+
+* **Source:** Yahoo Finance
+* **Index:** S&P 500 (`^GSPC`)
+* **Frequency:** Daily
+* **File:** `S&P500.csv`
+* **Target Variable:** `Close` price
+
+The dataset contains Open, High, Low, Close, Adjusted Close, and Volume values.
+
+---
+
+## 🛠️ Technologies Used
+
+* Python
+* Pandas, NumPy
+* Scikit-learn
+* Statsmodels
+* TensorFlow / Keras
+* Matplotlib
+
+---
+
+## 🧱 Project Structure
+
+```
+├── S&P500.csv
+├── phase1_data_understanding.py
+├── phase2_preprocessing.py
+├── phase3_modeling.py
+├── phase4_evaluation.py
+├── phase5_visualization.py
+└── README.md
+```
+
+---
+
+## 🔍 Methodology
+
+1. **Data Collection & Understanding**
+   Load, inspect, and validate time-series data.
+
+2. **Preprocessing**
+   Select target variable, scale data, and create time-based train-test split.
+
+3. **Modeling**
+
+   * ARIMA as a baseline statistical model
+   * LSTM to capture long-term temporal dependencies
+
+4. **Evaluation**
+   Models are evaluated using RMSE and MAE.
+
+5. **Visualization**
+   Actual vs predicted values are plotted for comparison.
+
+---
+
+## 📈 Results
+
+The LSTM model demonstrates better performance compared to ARIMA, particularly in capturing non-linear trends and volatility in the stock market data.
+
+---
+
+## ⚠️ Notes
+
+* Time-based splitting is used to avoid data leakage
+* Random shuffling is strictly avoided
+* This project is for educational purposes only and not financial advice
+
+---
+
+## ✅ Conclusion
+
+The study shows that deep learning models like LSTM can outperform traditional statistical models for financial time series forecasting when properly implemented and evaluated.
